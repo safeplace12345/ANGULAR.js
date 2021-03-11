@@ -1,0 +1,8 @@
+<h1>Beer Collection!</h1>
+<ul *ngIf = 'beers'>
+<li *ngFor='let beer of beers'>
+    <p>{{beer.name}}</p>
+    <p>{{beer.country}}</p>
+    <a href="#">Site</a>
+</li>
+</ul>

@@ -1,0 +1,47 @@
+<h1>Welcome mate</h1>
+<div class="play" >
+    <h2>Single way data-binding</h2>
+    <p>You have clicked <span (click)='counter()'>here</span>{{count}} times</p>
+</div>
+<div class="play" [style.background-color]='count > 3 ? "yellow" : "orange"'>
+    <h2>Style-binding</h2>
+    <p>Using the [ngStyle] flag and some boolean exps we can modify css on the fly</p>
+
+</div>
+<!-- <div class="play" [style.color]='count > 1 ? "red" : "blue"' style='font-size: 2em;'>
+    Test
+</div> -->
+
+<div class="play">
+    <h2>Two way data-binding</h2>
+    <p>Using the ngModel</p>
+    <input type="text" name="message" id="message" [(ngModel)]='name'>
+    <p>You said : <span>{{name}}</span></p>
+</div>
+<div class="play">
+    <h4>Ng Templates</h4>
+    <ng-template [ngIf]='count > 3' [ngIfElse]='none'>
+        You have clicked more than 3 times
+    </ng-template>
+<ng-template #none>
+    count is low 
+</ng-template>
+
+</div>
+<div class="play">
+    <h5>Multiple css manipulation with [ngStyle]</h5>
+    <div class="test1"[ngStyle]='{
+        "background": "red",
+        "color" : "white",
+        "padding" : "1em"
+    }'>
+        <h3 style="text-align: center;">Multiple Css</h3>
+    </div>
+</div>
+<div class='play'>
+    <h5>Css Classes</h5>
+    <div [class.active]='count > 1'>
+        <p>create a class in the components css</p>
+    </div>
+</div>
+

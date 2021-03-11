@@ -1,0 +1,20 @@
+span{
+    font-weight: bold;
+    user-select: none;
+    padding: .3em 0.8em;
+    cursor: pointer;
+    background-color: gray;
+}
+.play{
+    padding: .3em;
+     border: 1px solid gray;
+     margin: 5px auto;
+     width: 80%;
+     input{
+         padding: 1em;
+         margin-bottom: 2em;
+     }
+}
+.active{
+    border: 4px solid hotpink;
+}

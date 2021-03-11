@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a.logo{
+        background-color: white;
+        padding: 0 30px;
+        border-radius: 10px;
+        color: black;
+        text-decoration: double;
+        font-family: cursive;
+         font-size:1.3rem;
+         margin-left: 15px;
+
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        float: right;
+        width: 40%;
+        justify-content: space-around
+    }
+}
